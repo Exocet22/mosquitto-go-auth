@@ -239,7 +239,7 @@ func NewMysql(authOpts map[string]string, logLevel log.Level, hasher hashing.Has
 func (o Mysql) GetUser(username, password, clientid string) (bool, error) {
 
 	var pwHash sql.NullString
-	err := o.DB.Get(&pwHash, o.UserQuery, username)
+	err := o.DB.Get(&pwHash, o.UserQuery, username, clientid)
 
 	if err != nil {
 		if err == sql.ErrNoRows {

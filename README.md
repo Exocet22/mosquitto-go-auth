@@ -1,8 +1,10 @@
-# Archived
+# Forked version
 
-08/06/2025: I haven't used this plugin in almost 6 years nor have followed Mosquitto's changes in some time now.
-The plugin works perfectly fine at the moment but that might stop being true in time, so I'm archiving the project to make clear there will be no more changes to it.
-Thanks to everyone that had kinds words and appreciated the project.
+This is a forked version intended to expose the MQTT clientid on the mySQL backend.
+That's all folks !
+
+Many thanks to Ignacio Gómez and all the contributors.
+
 
 # Mosquitto Go Auth
 

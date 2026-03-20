@@ -307,7 +307,7 @@ func (o Mysql) CheckAcl(username, topic, clientid string, acc int32) (bool, erro
 
 	var acls []string
 
-	err := o.DB.Select(&acls, o.AclQuery, username, acc)
+	err := o.DB.Select(&acls, o.AclQuery, clientid, acc)
 
 	if err != nil {
 		log.Debugf("MySql check acl error: %s", err)
